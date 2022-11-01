@@ -15,7 +15,7 @@ export default function Home() {
   // numberOfWhitelisted tracks the number of addresses's whitelisted
   const [numberOfWhitelisted, setNumberOfWhitelisted] = useState(0);
   // Create a reference to the Web3 Modal (used for connecting to Metamask) which persists as long as the page is open
-  const web3ModalRef = useRef();
+  const web3ModalRef: any = useRef();
 
   /**
    * Returns a Provider or Signer object representing the Ethereum RPC with or without the
