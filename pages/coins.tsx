@@ -30,7 +30,7 @@ export default function Home() {
   // isOwner gets the owner of the contract through the signed address
   const [isOwner, setIsOwner] = useState(false);
   // Create a reference to the Web3 Modal (used for connecting to Metamask) which persists as long as the page is open
-  const web3ModalRef = useRef();
+  const web3ModalRef: any = useRef();
 
   /**
    * getTokensToBeClaimed: checks the balance of tokens that can be claimed by the user
@@ -217,7 +217,7 @@ export default function Home() {
       if (address.toLowerCase() === _owner.toLowerCase()) {
         setIsOwner(true);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err.message);
     }
   };
