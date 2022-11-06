@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+export default function handler(req: any, res: any) {
     // get the tokenId from the query params
     const tokenId = req.query.tokenId;
     // As all the images are uploaded on github, we can extract the images from github directly.
